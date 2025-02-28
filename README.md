@@ -2,13 +2,32 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
-## Development server
+## Descripción
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+PetVaccineTracker es una aplicación web diseñada para ayudar a los dueños de mascotas a gestionar y recordar el calendario de vacunación de sus animales. Con una interfaz amigable, permite registrar mascotas, programar vacunas
 
-## Code scaffolding
+## Contributing
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Usa la versión correcta de Node.js
+`nvm use 20.11.1` Si usas nvm, o asegúrate de tener instalada la versión 20.11.1 de Node.js.
+2. Instala las dependencias:
+`npm i`
+3. Ejecuta el proyecto:
+`ng serve`
+
+## Tecnologías utilizadas
+
+Framework: Angular
+
+Lenguaje: TypeScript
+
+Gestión de paquetes: npm
+
+Estilos: Css/AngularMaterial
+
+## Control de cambios
+
+El control de cambios en este proyecto se lleva en el archivo `changelog.md` y en el VERSION
 
 ## Build
 
