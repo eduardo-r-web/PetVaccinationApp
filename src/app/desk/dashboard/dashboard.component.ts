@@ -30,6 +30,6 @@ export default class DashboardComponent implements OnInit {
   }
 
   view(id: number) {
-
+    this._router.navigate(['/desk/pet-profile', id]); 
   }
 }

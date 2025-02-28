@@ -16,7 +16,7 @@ export const routes: Routes = [
                 loadComponent: () => import('./desk/pet-form/pet-form.component')
             },
             {
-                path: 'pet/:id',
+                path: 'pet-profile/:id',
                 title: 'Pet View',
                 loadComponent: () => import('./desk/pet-profile/pet-profile.component')
             },

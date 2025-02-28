@@ -29,6 +29,29 @@ Estilos: Css/AngularMaterial
 
 El control de cambios en este proyecto se lleva en el archivo `changelog.md` y en el VERSION
 
+## Arquitectura empleada
+
+La estructura del proyecto se organiza en los siguientes directorios:
+
+desk/: Contiene los componentes principales de la aplicación.
+interface/: Define los modelos de datos e interfaces utilizados.
+services/: Almacena todos los servicios empleados en la aplicación.
+shared/: Incluye componentes reutilizables en diferentes partes de la aplicación.
+assets/: Contiene archivos estáticos como imágenes, fuentes y archivos JSON de configuración.
+
+## Diseño
+
+Inicio de la aplicaciòn: muestra el menù de iniciò, donde se encuentra una tabla con la informaciòn de la vacunaciòn de mascotas
+
+![Home](./src/assets/images/home.png)
+
+- Informaciòn de mascota: Permite ver la informaciòn detallada de una mascota en especifico.
+
+![Home](./src/assets/images/pet-profile.png)
+
+- Botòn para agregar una nueva mascota al listado: Se encuentra en proceso de desarrollo para futuras versiones.
+
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.

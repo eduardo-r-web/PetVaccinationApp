@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { ApiResponse } from '../../interfaces/api-response.interface';
+import { Pet } from '../../interfaces/api-response.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -13,19 +13,25 @@ export class PetServicesService {
   constructor(private _httpClient: HttpClient) {}
 
   getPets(): Observable<any[]> {
-    return this._httpClient.get<ApiResponse>(this.petsUrl).pipe(
+    return this._httpClient.get<any>(this.petsUrl).pipe(
       map(response =>
-        response.data.map(mascota => ({
-          id: mascota.id,
-          name: mascota.name,
-          type: mascota.type,
-          breed: mascota.breed,
-          age: mascota.age,
-          lastVaccine: mascota.lastVaccine,
-          nextVaccine: mascota.nextVaccine,
-          owner: mascota.owner.name
+        response.data.map((pet: Pet) => ({
+          id: pet.id,
+          name: pet.name,
+          type: pet.type,
+          breed: pet.breed,
+          age: pet.age,
+          lastVaccine: pet.lastVaccine,
+          nextVaccine: pet.nextVaccine,
+          owner: pet.owner.name
         }))
       )
+    );
+  }
+
+  getPet(id: number): Observable<Pet | undefined> {
+    return this._httpClient.get<any>(this.petsUrl).pipe(
+      map(response => response.data.find((pet: any) => pet.id == id))
     );
   }
 }
