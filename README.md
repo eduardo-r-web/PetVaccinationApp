@@ -51,6 +51,10 @@ Inicio de la aplicaciòn: muestra el menù de iniciò, donde se encuentra una ta
 
 - Botòn para agregar una nueva mascota al listado: Se encuentra en proceso de desarrollo para futuras versiones.
 
+## Modelo de datos
+
+Para este proyecto se hizo un mock de la respuesta del endpoint en un archivo .json alojado en los assets
+
 
 ## Build
 
